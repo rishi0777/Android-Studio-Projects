@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighScore">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/trophy"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+        app:lottie_fileName="high_trophy.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:background="#151515">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main"
+        android:layout_below="@+id/trophy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="high_back.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:background="#151515">
+    </com.airbnb.lottie.LottieAnimationView>
+   <RelativeLayout
+       android:layout_marginTop="30sp"
+       android:layout_below="@+id/trophy"
+       android:layout_width="220sp"
+       android:layout_height="260sp"
+       android:layout_centerInParent="true">
+
+       <TextView
+           android:id="@+id/name1"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:fontFamily="@font/bangers"
+           android:text="Name 1"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="60sp"
+            android:layout_height="30sp"
+            android:layout_toRightOf="@+id/name1"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            android:layout_marginLeft="100sp"
+            android:text="Score 1"
+            android:textColor="#FFFFFF"
+            ></TextView>
+
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:fontFamily="@font/bangers"
+                android:layout_below="@id/name1"
+                android:layout_marginTop="30sp"
+                android:text="Name 2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_toRightOf="@+id/name1"
+                android:fontFamily="@font/bangers"
+                android:textSize="20sp"
+                android:layout_marginTop="30sp"
+                android:layout_below="@id/score1"
+                android:layout_marginLeft="100sp"
+                android:text="Score 2"
+                android:textColor="#FFFFFF"
+                ></TextView>
+
+
+       <TextView
+           android:id="@+id/name3"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:fontFamily="@font/bangers"
+           android:layout_below="@id/name2"
+           android:layout_marginTop="30sp"
+           android:text="Name 3"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"></TextView>
+
+       <TextView
+           android:id="@+id/score3"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:layout_toRightOf="@+id/name1"
+           android:fontFamily="@font/bangers"
+           android:textSize="20sp"
+           android:layout_marginTop="30sp"
+           android:layout_below="@id/score2"
+           android:layout_marginLeft="100sp"
+           android:text="Score 3"
+           android:textColor="#FFFFFF"
+           ></TextView>
+
+       <TextView
+           android:id="@+id/label_for_last_user"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:fontFamily="@font/bangers"
+           android:layout_below="@id/name3"
+           android:layout_marginTop="30sp"
+           android:text="Last User Name"
+           android:textColor="#FFFFFF"
+           android:textSize="10sp"></TextView>
+
+       <TextView
+           android:id="@+id/label_for_last_score"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:layout_toRightOf="@+id/label_for_last_user"
+           android:fontFamily="@font/bangers"
+           android:textSize="10sp"
+           android:layout_marginTop="30sp"
+           android:layout_below="@id/score3"
+           android:text="Last User Score"
+           android:textColor="#FFFFFF"
+           android:layout_marginLeft="100sp"
+           ></TextView>
+
+       <TextView
+           android:id="@+id/cur_user"
+           android:layout_width="50sp"
+           android:layout_height="30sp"
+           android:fontFamily="@font/bangers"
+           android:layout_below="@id/label_for_last_user"
+           android:text="Cur_User"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"></TextView>
+
+       <TextView
+           android:id="@+id/cur_score"
+           android:layout_width="60sp"
+           android:layout_height="30sp"
+           android:layout_toRightOf="@+id/name1"
+           android:fontFamily="@font/bangers"
+           android:textSize="20sp"
+           android:layout_below="@id/label_for_last_score"
+           android:layout_marginLeft="100sp"
+           android:text="Cur_Score"
+           android:textColor="#FFFFFF"
+           ></TextView>
+   </RelativeLayout>
+</RelativeLayout>
